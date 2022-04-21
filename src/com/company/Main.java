@@ -42,6 +42,11 @@ public class Main {
         datos = ps.obtenerDatos();
         System.out.println(datos);
 
+        //Instituto
+        ins.nomProfe("Pepito");
+        ins.agregarProfe("Profe Marc");
+        datos = ins.obtenerDatos();
+        System.out.println(datos);
 
     }
 }

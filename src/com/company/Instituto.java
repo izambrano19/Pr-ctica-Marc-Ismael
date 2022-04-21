@@ -16,4 +16,7 @@ public class Instituto {
     public void agregarProfe(String profe){
         this.profe = profe;
     }
+    public String obtenerDatos(){
+        return "Persona que se llama " + this.nom + " " + this.profe;
+    }
 }
