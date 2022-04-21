@@ -47,6 +47,6 @@ public class Main {
         ins.agregarProfe("Profe Marc");
         datos = ins.obtenerDatos();
         System.out.println(datos);
-//hola
+
     }
 }
