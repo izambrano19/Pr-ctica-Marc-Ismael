@@ -25,7 +25,7 @@ public class Main {
         //Estudiante
         e.cambiarNombre("Isaac");
         e.asignarDni("23423");
-        e.ponerNota(9.9);
+        e.ponerNota(15);
         datos = e.obtenerDatos();
         System.out.println(datos);
 
@@ -42,8 +42,8 @@ public class Main {
         ps.cambiarSueldo(6800.5);
 
 
-        Date dataInicio = new Date(2022,4,15);
-        Date dataFinal = new Date(2022,4,16);
+        Date dataInicio = new Date(2022,04,15);
+        Date dataFinal = new Date(2022,04,16);
         ps.asignarSustitucion(dataInicio,dataFinal);
         datos = ps.obtenerDatos();
         System.out.println(datos);

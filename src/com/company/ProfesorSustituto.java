@@ -8,6 +8,7 @@ public class ProfesorSustituto extends Profesor{
     private Date dataFinal;
 
 
+
     public ProfesorSustituto(){
     }
     public void asignarSustitucion(Date dataInicio, Date dataFinal){
@@ -16,7 +17,7 @@ public class ProfesorSustituto extends Profesor{
     }
 
     public String obtenerDatos(){
-        return super.obtenerDatos() + " , la fecha de inicio es " + this.dataInicio + " y tu fecha de salida es " + this.dataFinal;
+        return super.obtenerDatos() + " , la fecha de inicio es " + dataInicio.getDay() + "/" + dataInicio.getMonth() + "/" + dataInicio.getYear() + " y tu fecha de salida es " + dataFinal.getDay() + "/" + dataFinal.getMonth() + "/" + dataFinal.getYear();
 
     }
 

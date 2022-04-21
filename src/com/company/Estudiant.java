@@ -10,7 +10,17 @@ public class Estudiant extends Persona{
     }
 
     public void ponerNota(double nota){
-        this.nota = nota;
+
+
+        if(nota >10){
+            System.out.println("ERROR");
+        }
+
+        if(nota<0){
+            System.out.println("ERROR");
+        }else{
+            this.nota = nota;
+        }
     }
 
 
