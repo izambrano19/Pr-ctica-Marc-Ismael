@@ -1,5 +1,7 @@
 package com.company;
 
+import java.util.Date;
+
 public class Main {
 
     public static void main(String[] args) {
@@ -38,14 +40,19 @@ public class Main {
         ps.cambiarNombre("Profe Marc sustituto");
         ps.asignarDni("99999999");
         ps.cambiarSueldo(6800.5);
-        ps.asignarSustitucion("01/05/2022","03/05/2022");
+
+
+        Date dataInicio = new Date(2022,4,15);
+        Date dataFinal = new Date(2022,4,16);
+        ps.asignarSustitucion(dataInicio,dataFinal);
         datos = ps.obtenerDatos();
         System.out.println(datos);
 
         //Instituto
-        ins.nomProfe("Pepito");
-        ins.agregarProfe("Profe Marc");
-        datos = ins.obtenerDatos();
+        ins.nom("La Guineueta");
+        ins.agregarProfe("Josep");
+        ins.agregarEstudiante("Josue");
+        datos = ins.imprimirInformacion();
         System.out.println(datos);
 
     }
