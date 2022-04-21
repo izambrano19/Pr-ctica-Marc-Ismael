@@ -50,8 +50,6 @@ public class Main {
 
         //Instituto
         ins.nom("La Guineueta");
-        ins.agregarProfe("Josep");
-        ins.agregarEstudiante("Josue");
         datos = ins.imprimirInformacion();
         System.out.println(datos);
 
