@@ -29,7 +29,6 @@ public class Main {
         datos = e.obtenerDatos();
         System.out.println(datos);
 
-
         //Profesor
         System.out.print("\n");
         p.cambiarNombre("Profe Marc");
