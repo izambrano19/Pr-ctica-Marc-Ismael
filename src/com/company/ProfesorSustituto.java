@@ -7,10 +7,6 @@ public class ProfesorSustituto extends Profesor{
     private Date dataInicio;
     private Date dataFinal;
 
-
-
-    public ProfesorSustituto(){
-    }
     public void asignarSustitucion(Date dataInicio, Date dataFinal){
         this.dataInicio = dataInicio;
         this.dataFinal = dataFinal;

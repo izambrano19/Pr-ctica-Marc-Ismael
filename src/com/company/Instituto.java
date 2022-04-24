@@ -3,17 +3,10 @@ package com.company;
 import java.util.ArrayList;
 import java.util.List;
 
+
 public class Instituto {
     private String nom;
-    private String profe;
-    private String estudiante;
-    List<Persona> personas = new ArrayList<Persona>();
-
-
-
-    public Instituto(){
-
-    }
+    List<Persona> personas = new ArrayList<>();
 
     public void nom(String nom){
         this.nom = nom;
@@ -26,8 +19,11 @@ public class Instituto {
     public void agregarEstudiante(Estudiant estudiante){
         this.personas.add(estudiante);
     }
-
-    public String imprimirInformacion(){
-        return "El instituto " + this.nom + " ,el nombre del profesor es " + this.profe + " y el nombre del estudiante es " + this.estudiante;
+    public void imprimirInformacion() {
+        System.out.println("El instituto " + this.nom);
+        for (Persona p : personas) {
+            System.out.println(p.obtenerDatos());
+        }
     }
+
 }

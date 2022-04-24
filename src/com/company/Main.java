@@ -25,22 +25,24 @@ public class Main {
         //Estudiante
         e.cambiarNombre("Isaac");
         e.asignarDni("23423");
-        e.ponerNota(15);
+        e.ponerNota(9.50);
         datos = e.obtenerDatos();
         System.out.println(datos);
 
+
         //Profesor
+        System.out.print("\n");
         p.cambiarNombre("Profe Marc");
         p.asignarDni("111111111");
         p.cambiarSueldo(6800.5);
         datos = p.obtenerDatos();
         System.out.println(datos);
 
-        //Profesor Sustituo
+        //Profesor Sustituto
+        System.out.print("\n");
         ps.cambiarNombre("Profe Marc sustituto");
         ps.asignarDni("99999999");
-        ps.cambiarSueldo(6800.5);
-
+        ps.cambiarSueldo(7500);
 
         Date dataInicio = new Date(2022,04,15);
         Date dataFinal = new Date(2022,04,16);
@@ -49,9 +51,11 @@ public class Main {
         System.out.println(datos);
 
         //Instituto
+        System.out.print("\n");
         ins.nom("La Guineueta");
-        datos = ins.imprimirInformacion();
-        System.out.println(datos);
-
+        ins.agregarProfe(p);
+        ins.agregarProfe(ps);
+        ins.agregarEstudiante(e);
+        ins.imprimirInformacion();
     }
 }

@@ -6,8 +6,7 @@ public class Estudiant extends Persona{
 
     private Double nota;
 
-    public Estudiant(){
-    }
+
 
     public void ponerNota(double nota){
         this.nota = nota;
@@ -17,11 +16,18 @@ public class Estudiant extends Persona{
 
     public String obtenerDatos(){
         // Quiero que me diga lo mismo que persona mas la nota
-
-        return super.obtenerDatos() + " y tu nota es " + this.nota;
+        if (nota < 0){
+            System.out.print("La nota tiene que ser entre 0 y 10");
+        }else if (nota > 10) {
+            System.out.print("La nota tiene que ser entre 0 y 10");
+        }else {
+            System.out.print(super.obtenerDatos() + " (ESTUDIANTE con nota: " + nota + ")");
+        }
+        return "";
+    }
 
     }
 
 
 
-}
+
