@@ -9,24 +9,23 @@ public class Main {
         Persona p1 = new Persona(); //Instancia de persona
         Persona p2 = new Persona();
         Estudiant e = new Estudiant();
-        Estudiant e1 = new Estudiant();
         Profesor p = new Profesor();
         ProfesorSustituto ps = new ProfesorSustituto();
         Instituto ins = new Instituto();
 
         p1.cambiarNombre("Isma");
-        p1.asignarDni("12345678");
+        p1.asignarDni("123456789");
         String datos = p1.obtenerDatos();
         System.out.println(datos);
 
-        p2.cambiarNombre("Joan");
-        p2.asignarDni("01035");
-        datos = p2.obtenerDatos();
-        System.out.println(datos);
+        p2.cambiarNombre("Isma");
+        p2.asignarDni("123456789");
+        String datos1 = p2.obtenerDatos();
+        System.out.println(datos1);
 
         //Estudiante
         e.cambiarNombre("Isaac");
-        e.asignarDni("23423");
+        e.asignarDni("123456789");
         e.ponerNota(10);
         datos = e.obtenerDatos();
         System.out.println(datos);
@@ -42,7 +41,7 @@ public class Main {
         //Profesor Sustituto
         System.out.print("\n");
         ps.cambiarNombre("Profe Marc sustituto");
-        ps.asignarDni("99999999");
+        ps.asignarDni("123456789");
         ps.cambiarSueldo(2700);
 
         Date dataInicio = new Date(2022,04,15);
