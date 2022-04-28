@@ -12,7 +12,7 @@ public class ProfesorSustituto extends Profesor{
         this.dataFinal = dataFinal;
     }
 
-    public String obtenerDatos(){
+    public String obtenerDatos() throws Exception{
         return super.obtenerDatos() + " , la fecha de inicio es " + dataInicio.getDay() + "/" + dataInicio.getMonth() + "/" + dataInicio.getYear() + " y tu fecha de salida es " + dataFinal.getDay() + "/" + dataFinal.getMonth() + "/" + dataFinal.getYear();
 
     }
