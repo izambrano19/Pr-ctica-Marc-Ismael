@@ -7,10 +7,10 @@ public class Profesor extends Persona{
 
     public void cambiarSueldo(double nuevoSueldo) throws Exception{
         this.nuevoSueldo = nuevoSueldo;
-        if(nuevoSueldo > 3000){
+        if (nuevoSueldo > 3000){
             throw new Exception("Tu sueldo no puede ser superior a 3000");
         }
-        if(nuevoSueldo < 0){
+        if (nuevoSueldo < 0){
             throw new Exception("No puedes colocar números negativos en el sueldo");
 
         }

@@ -17,17 +17,18 @@ public class Persona {
     }
     public void asignarDni(String dni) throws Exception{
         this.dni = dni;
-        if(dni==null){
+        if (dni==null){
             throw new Exception("Ya has introducido tu dni anteriormente");
+
         }
     }
 
     //Función que devuelva el nombre y el dni de la persona
     public String obtenerDatos() throws Exception{
-        if(dni.isEmpty()){
+        if (dni.isEmpty()){
             throw new Exception("El dni esta vacio");
         }
-        if(nom.isEmpty()){
+        if (nom.isEmpty()){
             throw new Exception("El nombre esta vacio");
         }
 
