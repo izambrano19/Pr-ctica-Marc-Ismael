@@ -7,7 +7,6 @@ public class Main {
 
     public static void main(String[] args) throws Exception{
         Persona p1 = new Persona(); //Instancia de persona
-        Persona p2 = new Persona();
         Estudiant e = new Estudiant();
         Profesor p = new Profesor();
         ProfesorSustituto ps = new ProfesorSustituto();
