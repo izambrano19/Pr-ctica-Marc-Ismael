@@ -11,14 +11,20 @@ public class Instituto {
     public void nom(String nom){
         this.nom = nom;
     }
+//Código redundante
 
-    public void agregarProfe(Profesor profe){
-        this.personas.add(profe);
+//    public void agregarProfe(Profesor profe){
+//        this.personas.add(profe);
+//    }
+//
+//    public void agregarEstudiante(Estudiant estudiante){
+//        this.personas.add(estudiante);
+//    }
+
+    public void agregar(Persona persona){
+        this.personas.add(persona);
     }
 
-    public void agregarEstudiante(Estudiant estudiante){
-        this.personas.add(estudiante);
-    }
     public void imprimirInformacion() throws Exception{
         System.out.println("El instituto " + this.nom);
         for (Persona p : personas) {

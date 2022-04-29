@@ -18,11 +18,6 @@ public class Main {
         String datos = p1.obtenerDatos();
         System.out.println(datos);
 
-        p2.cambiarNombre("Isma");
-        p2.asignarDni("123456789");
-        String datos1 = p2.obtenerDatos();
-        System.out.println(datos1);
-
         //Estudiante
         e.cambiarNombre("Isaac");
         e.asignarDni("123456789");
@@ -53,9 +48,9 @@ public class Main {
         //Instituto
         System.out.print("\n");
         ins.nom("La Guineueta");
-        ins.agregarProfe(p);
-        ins.agregarProfe(ps);
-        ins.agregarEstudiante(e);
+        ins.agregar(p);
+        ins.agregar(ps);
+        ins.agregar(e);
         ins.imprimirInformacion();
     }
 }
