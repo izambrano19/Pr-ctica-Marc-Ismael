@@ -20,7 +20,11 @@ public class Main {
         //Estudiante
         e.cambiarNombre("Isaac");
         e.asignarDni("123456789");
-        e.ponerNota(10);
+        e.ponerNota(7);
+        e.ponerNota(5);
+        e.ponerNota(3);
+        e.ponerNota(9);
+        e.ponerNota(1);
         datos = e.obtenerDatos();
         System.out.println(datos);
 
