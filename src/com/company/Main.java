@@ -1,6 +1,5 @@
 package com.company;
 
-import java.rmi.server.ExportException;
 import java.util.Date;
 
 public class Main {
@@ -14,17 +13,19 @@ public class Main {
 
         p1.cambiarNombre("Isma");
         p1.asignarDni("123456789");
-        String datos = p1.obtenerDatos();
+
+         String datos = p1.obtenerDatos();
         System.out.println(datos);
 
         //Estudiante
+
         e.cambiarNombre("Isaac");
-        e.asignarDni("123456789");
-        e.ponerNota(7);
+        e.asignarDni("12345678d");
         e.ponerNota(5);
         e.ponerNota(3);
         e.ponerNota(9);
         e.ponerNota(1);
+        e.ponerNota(8);
         datos = e.obtenerDatos();
         System.out.println(datos);
 
@@ -39,7 +40,7 @@ public class Main {
         //Profesor Sustituto
         System.out.print("\n");
         ps.cambiarNombre("Profe Marc sustituto");
-        ps.asignarDni("123456789");
+        ps.asignarDni("12345678G");
         ps.cambiarSueldo(2700);
 
         Date dataInicio = new Date(2022,04,15);
